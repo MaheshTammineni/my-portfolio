@@ -1,4 +1,5 @@
 import TimelineView from '../Experience-Timeline/TimelineView'
+import React from 'react';
 
 const timelineItemsList = [
     {

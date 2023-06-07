@@ -1,4 +1,5 @@
 import {AiFillClockCircle} from 'react-icons/ai'
+import React from 'react';
 
 import {
   CourseTitleAndDurationContainer,

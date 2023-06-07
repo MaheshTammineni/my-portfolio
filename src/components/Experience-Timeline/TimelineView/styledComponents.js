@@ -1,5 +1,4 @@
 import styled from 'styled-components/macro'
-
 export const TimelineContainer = styled.div`
   display: flex;
   justify-content: space-around;

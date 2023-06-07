@@ -1,8 +1,7 @@
+import React from "react";
 import {Chrono} from 'react-chrono'
-
 import ProjectTimelineCard from '../ProjectTimelineCard'
 import CourseTimelineCard from '../CourseTimelineCard'
-
 import {
   TimelineContainer,
   ResponsiveContainer,

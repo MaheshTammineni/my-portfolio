@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -6,7 +7,8 @@ import Home from './pages/Home.js'
 import About from './pages/About'
 import Skill from './pages/Skill'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
+import {motion} from "framer-motion/dist/framer-motion";
 import Project from './pages/Project';
 import Contact from './pages/Contact';
 

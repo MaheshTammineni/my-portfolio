@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 
 export const CourseTitleAndDurationContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
@@ -30,15 +30,23 @@ export const DurationContainer = styled.div`
   align-items: center;
   width: 160px;
 `
+export const DurationContainerMobile = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: start;
+width: 200px;
+`
 
 export const Duration = styled.p`
   color: #171f46;
   font-family: 'Roboto';
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 10px;
+  font-weight: 800;
   margin-bottom: 0px;
   line-height: 1.2;
   margin-left: 4px;
+  margin-top: -2px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }

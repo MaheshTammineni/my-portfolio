@@ -27,8 +27,11 @@ function Header() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Navbar.Brand className="logotext" as={Link} to="/">
-        <div className="text-white">
+        <div className="text-white d-none d-lg-flex">
         🅼🅰🅷🅴🆂🅷<span class="logo-style">𝐓</span>
+        </div>
+        <div className="text-white namespace d-xl-none d-lg-none">
+        🅼🅰🅷🅴🆂🅷<span class="logo-t">𝐓</span>
         </div>
       </Navbar.Brand>
 

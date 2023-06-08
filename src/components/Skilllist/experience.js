@@ -6,7 +6,7 @@ const timelineItemsList = [
       id: 'c6aad2fb-7673-45cf-9606-a335acc0cf4b',
       categoryId: 'COURSE',
       title: 'January 2021 - March 2023',
-      courseTitle: 'HCL Technologies Limited',
+      courseTitle: 'HCL Tech',
       description:
         'I have worked on Front-End of web application using angular framework developed UI responsive in desktop and mobile view and designed new layout of screens fixing browser compatibility issues and development defects and building logic for to achieve required functionality',
       imageUrl: 'https://assets.ccbp.in/frontend/react-js/projects-s4-img.png',
@@ -47,7 +47,7 @@ const timelineItemsList = [
         id: 'c6aad2fb-7673-45cf-9606-a335acc0cf4h',
         categoryId: 'COURSE',
         title: 'April 2023 - Present',
-        courseTitle: 'Tata Consultancy Services',
+        courseTitle: 'TCS',
         description:
           'Build your own personal portfolio website and a website to host conferences and events.  Publish your website and share it with your friends, family and beyond.',
         duration: '0.2 Years',

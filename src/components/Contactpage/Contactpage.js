@@ -17,7 +17,7 @@ function Contactpage() {
     {
       src: "https://i.ibb.co/wcZTfxB/bhavani.jpg",
       description:
-        " Mahesh is one of the best hard-working developer in our team ,he worked every day vigorously and his involvement in Angular development is much commendable.",
+        "Mahesh is one of the best developer in our development team, he worked every day vigorously and his involvement in Angular development is much commendable.",
       person: "-Bhavani Haridass, Technical Lead in HCLTech",
     },
   ];
@@ -30,20 +30,21 @@ function Contactpage() {
             <h1 class="testimonial-section-sub-heading mb-3 d-none d-lg-flex d-md-flex  d-flex justify-content-center headCenterTest">
               Testimonials
             </h1>
-            <h1 class="testimonial-section-sub-heading mb-3 link d-md-none  d-lg-none d-xl-none center">
+            <h1 class="contacthead testimonial-section-sub-heading mb-3 link d-md-none  d-lg-none d-xl-none center">
               Testimonials
             </h1>
             <h1 class="testimonial-section-heading mb-3">Our Members Says</h1>
           </div>
-          <Col md={12}>
-            <Carousel>
-              {images.map((image, index) => (
+
+          <div className="d-none d-lg-flex">
+          <Carousel >
+            {images.map((image, index) => (
                 <div
                   key={index}
                   className="col-12 demo-item"
                   style={{ backgroundColor: "black" }}
                 >
-                  <span className="col-2 sssd">
+                  <span className="col-2">
                     <img
                       src={image.src}
                       className="image-test"
@@ -51,16 +52,42 @@ function Contactpage() {
                     />
                   </span>
 
-                  <p className="col-6 des">{image.description}</p>
+                  <p className="col-10 des">{image.description}</p>
 
-                  <h4 className="col-3 name">{image.person}</h4>
+                  <h4 className="col-4 name">{image.person}</h4>
+                </div>
+              ))}            
+            </Carousel>
+          </div>
+           
+
+{/* mobile */}
+<Carousel className="d-xl-none d-lg-none">
+              {images.map((image, index) => (
+                <div
+                  key={index}
+                  className="testimonial-container col-12"
+                  style={{ backgroundColor: "black"}}
+                >
+                  <div className="demo-item-mobile">
+                    <img
+                      src={image.src}
+                      className="image-test-mobile"
+                      alt="personimage"
+                    />
+
+                  <p className="col-8 des-mobile">{image.description}</p>
+                  </div>
+                 
+
+                  <h4 className="name-mobile">{image.person}</h4>
                 </div>
               ))}
             </Carousel>
-          </Col>
 
           <Col md={12}>
-          <h2 className="contacthead">Get In Touch</h2>
+          <h2 className="d-none d-lg-flex testimonial-section-sub-heading d-flex justify-content-center headCenterTest">Get In Touch</h2>
+          <h2 className="contacthead d-md-none  d-lg-none d-xl-none">Get In Touch</h2>
           <p className="contactpara">
             I’m currently searching for opportunities for a front-end developer
             role. <br /> If there is any vacancy based on my skill I'm ready to
@@ -69,7 +96,7 @@ function Contactpage() {
             I’ll try my best to get back to you!
           </p>
 
-          <div className="contactbtn">
+          <div className="contactbtn text-center">
             <button
               className="contactbutton"
               // className="contactbtn"

@@ -4,7 +4,7 @@ import Homepage from '../components/Homepage/Homepage'
 
 function Home() {
   return (
-    <div>
+    <div style={{margin:0,width:"100%"}}>
       <Header />
       <Homepage />
     </div>

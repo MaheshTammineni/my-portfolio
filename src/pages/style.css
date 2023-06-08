@@ -29,7 +29,7 @@
   width: 28px !important;
   margin-top: 3px !important;
   margin-bottom: 5px !important;
-  margin-right: 2rem !important;
+  margin-right: 1rem !important;
   transform: rotate(0deg) !important;
   left: 0 !important;
   opacity: 1 !important;
@@ -78,6 +78,11 @@
 .logo-style{
   color: orange;
   padding-left: 5px;
+}
+.logo-t{
+  color: dodgerblue;
+  padding-left: 5px;
+  font-size: 25px;
 }
 .nav-link {
   color: white !important;
@@ -175,7 +180,6 @@
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
-
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -212,10 +216,18 @@
   font-size: 2.4em !important;
   color: #191919 !important;
 }
+
 .headtext {
   padding-top: 120px;
   font-size: 2.4em !important;
   color: #191919 !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+.headtextmobile{
+  padding-top: 120px;
+  font-size: 2.4em !important;
+  color: #ffffff !important;
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
@@ -225,6 +237,32 @@
   font-weight: 600 !important;
   letter-spacing: 1px !important;
 }
+.nametextmobile {
+  font-size: 2em !important;
+  color: green !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+
+.timeline-item-title {
+  font-size: 8px !important;
+  /* width: 140px !important; */
+  width: auto !important;
+}
+.timeline-item-title1 {
+  font-size: 12px !important;
+  width: 200px !important;
+}
+/*
+.card-content-wrapper{
+  color: red !important;
+  width: 240px !important;
+}
+.timeline-card-content{
+  color: red !important;
+  width: 240px !important;
+} */
+
 .imagedeveloper {
   margin-top: 50px;
   max-width: 550px;
@@ -344,6 +382,7 @@
     orange 80%
   );
   padding-top: 110px;
+  padding-bottom: 60px;
 }
 .textbackground {
   width: 100%;
@@ -378,6 +417,7 @@
   font-size: 1.1em !important;
   font-family: 'Poppins';
   word-wrap: normal;
+  text-align: justify;
 }
 .skilllist li {
   letter-spacing: 1px;
@@ -405,6 +445,15 @@
   height: 180px;
   margin-bottom: 10px;
   margin: auto;
+  display: flex;
+  border-radius: 50px;
+}
+.imagedesktop{
+  width: 200px;
+  height: 200px;
+  padding-top: 30px;
+  margin: auto;
+  display: flex;
   border-radius: 50px;
 }
 
@@ -519,9 +568,8 @@
   padding-bottom: 50px;
 }
 .contacthead {
-  padding-top: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color:  #2481ce !important;
   letter-spacing: 1px;
@@ -572,16 +620,32 @@ font-size: 12px;
 }
 .des{
   color:#9aa5b1;
-  display: flex;
-  justify-content: center;
-  width: 500px;
+  text-align: justify;  
+  margin-left: -60px;
+  width: 450px;
+  margin-right: 30px;
 }
-.name{
+.des-mobile{
+  color:#9aa5b1;
+  display: flex;
+  text-align: justify;  
+  width: 180px;
+  padding: 3px;
+}
+.name-mobile{
+  color: #ffffff;
+  font-size: 14px;
+  display: block;
+}
+.name {
   color: #ffffff;
   display: flex;
+  flex-direction: row;
   margin-top: 60px;
-  font-size: 20px;
-  justify-content: flex-end;
+  font-size: 15px;
+}
+.namespace{
+  padding-left: 15px;
 }
 .carousel {
   padding: 10px 10px 0;
@@ -592,20 +656,39 @@ font-size: 12px;
   border-radius: 4px;
   height: 230px;
 }
-
+.testimonial-container{
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
 .demo-item {
   height: 160px;
   padding: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
-
+.demo-item-mobile {
+  height: 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .image-test {
-  width: 70px;
-  height: 130px;
+  width: 5px;
+  height: 150px;
   padding: 10px;
   margin-top: -15px;
-  margin-left: 15px;
+  margin-left: -120px;
+  border-radius: 120px;
+}
+.image-test-mobile{
+  width: 80px;
+  height: 100px;
+  /* padding: 10px;
+  margin-top: -15px;
+  margin-left: 15px; */
   border-radius: 70px;
 }
 
@@ -661,4 +744,10 @@ font-size: 12px;
 .sgg{
  display: flex;
  justify-content: center;
+}
+.gif{
+  width: 350px;
+  margin-top: 10px;
+  height:  400px;
+  margin-bottom: 60px;
 }
